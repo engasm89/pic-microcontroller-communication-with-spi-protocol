@@ -6,6 +6,14 @@
  * Notes: Auto-generated metadata block (2025-11-18)
  */
 
+/*
+ * Course: Pic Microcontroller Communication With Spi Protocol
+ * Platform: PIC Microcontroller
+ * Author: Ashraf S A AlMadhoun
+ * Purpose: Auto-generated metadata block to document the learning goals.
+ * Notes: Auto-generated metadata block (2025-11-18)
+ */
+
 #include <stdio.h> // Include I/O for SPI logs
 #include <unistd.h> // Include POSIX sleep for timing
 

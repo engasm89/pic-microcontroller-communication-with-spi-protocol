@@ -1,24 +1,16 @@
-# PIC SPI — Circuit Schematic
+# Pic Microcontroller Communication With Spi Protocol — Circuit Notes
 
-- Course: PIC Microcontroller Communication with SPI Protocol
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/spi-pic-microcontroller-spi-communication-spi-protocol-pic-spi-i2c/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the PIC Microcontroller board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Connections
+## Wiring Checklist
 
-- Master (PIC) to Slave: `MOSI`, `MISO`, `SCK`, `CS`. Common `GND`.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
- PIC MOSI ---- MOSI Slave
- PIC MISO ---- MISO Slave
- PIC SCK  ---- SCK  Slave
- PIC CS   ---- CS   Slave
- GND      ---- GND  Slave
-```
-
-## Purchase With Discount
-
-Get a discounted price and build reliable SPI links — use the course link above.
-
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.

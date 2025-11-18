@@ -1,3 +1,11 @@
+/*
+ * Course: Pic Microcontroller Communication With Spi Protocol
+ * Platform: PIC Microcontroller
+ * Author: Ashraf S A AlMadhoun
+ * Purpose: Auto-generated metadata block to document the learning goals.
+ * Notes: Auto-generated metadata block (2025-11-18)
+ */
+
 #include <stdio.h> // Include I/O for SPI logs
 #include <unistd.h> // Include POSIX sleep for timing
 
@@ -20,6 +28,7 @@ int pic_spi_transfer(unsigned char tx, unsigned char *rx) { // Function for SPI 
 } // End pic_spi_transfer
 
 // Entry demonstrating PIC SPI communication
+// Main routine: orchestrates the pic microcontroller communication with spi protocol scenario
 int main(void) { // Begin main function
   printf("PIC Microcontroller Communication with SPI Protocol\n"); // Title
   pic_spi_init_master(); // Initialize SPI master
